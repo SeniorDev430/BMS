@@ -47,7 +47,6 @@ namespace HelloWorld.Controllers.Api
             var token = await tokenProvider.GenerateToken(userName, password);
             if (token == null)
                 return NotFound("Bad username or password");
-        
             return Json(token);
         }
 

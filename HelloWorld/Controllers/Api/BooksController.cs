@@ -8,13 +8,11 @@ using Database.Interfaces;
 using Models.Models;
 using Models.Dtos.Book;
 using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
 
 namespace HelloWorld.Controllers.Api
 {
     [Produces("application/json")]
     [Route("api/book")]
-    [Authorize]
     public class BooksController : Controller
     {
         private readonly IUnitOfWork unitOfWork;
